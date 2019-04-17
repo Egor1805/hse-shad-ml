@@ -23,7 +23,9 @@ X = df.loc[:, 1:]
 # долю верных ответов (accuracy).
 
 kf = KFold(len(y), n_folds=5, shuffle=True, random_state=42)
-
+#{//РЕ 
+#kf = KFold(n_splits=5, shuffle=True, random_state=42)
+#РЕ//}
 # 4. Найдите точность классификации на кросс-валидации для метода k ближайших соседей
 # (sklearn.neighbors.KNeighborsClassifier), при k от 1 до 50. При каком k получилось оптимальное качество?
 # Чему оно равно (число в интервале от 0 до 1)? Данные результаты и будут ответами на вопросы 1 и 2.
